@@ -1,0 +1,36 @@
+#login-form {
+
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    color:rgb(78, 78, 90);
+
+}
+
+#login-error-msg-holder {
+    margin: auto;
+    width: 50%;
+    padding: 10px;    
+}
+
+#login-header{
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    padding: 10px;
+    color: rgb(78, 78, 90);
+}
+
+#main-holder {
+    margin: auto;
+    width: 50%;
+    background-color: lightgrey;
+    border-radius: 15px;
+}
+
+#title {
+    margin: auto;
+    width: 50%;
+    font-size: medium;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
