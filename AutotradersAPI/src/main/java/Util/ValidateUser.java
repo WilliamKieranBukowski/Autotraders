@@ -27,11 +27,11 @@ public class ValidateUser {
         Boolean userExists = false;
 
         st = ConnectionService.c.createStatement();
-        rs = st.executeQuery("select * from ers_users where username = " + username + ";");
+        rs = st.executeQuery("select * from users where username = " + username + ";");
         username = rs.getString(username);
         password = rs.getString(password);
 
-        rs = st.executeQuery("Select * From ers_users where username = " + username + ";");
+        rs = st.executeQuery("Select * From users where username = " + username + ";");
         if(!rs.next()){
             String noUser = "There is no user with your credentials, try again";
         } else {

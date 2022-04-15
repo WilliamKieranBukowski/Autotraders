@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="homeStyles.css">
+    <link rel="stylesheet" href="home.css">
     <script src="home.js"></script>
     <title>AutoTraders</title>
     <link rel = "icon" href = "media/senna.jpg" 
@@ -12,10 +12,10 @@
     <main id="main-holder">
         <h1 id="login-header">Login</h1>
         
-        <form id="login-form">
+        <form id="login-form" method="POST">
           <input type="text" name="username" id="username-field" class="login-form-field" placeholder="Username">
           <input type="password" name="password" id="password-field" class="login-form-field" placeholder="Password">
-          <input type="submit" value="Login" id="login-form-submit">
+          <input type="submit" onclick="submit()" value="Login" id="login-form-submit">
         </form>
 
         

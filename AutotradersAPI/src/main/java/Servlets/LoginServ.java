@@ -19,7 +19,7 @@ import java.security.NoSuchAlgorithmException;
 import java.sql.*;
 
 
-
+@WebServlet("/Login")
 public class LoginServ extends HttpServlet {
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
@@ -32,7 +32,7 @@ public class LoginServ extends HttpServlet {
 
         if(Validate.checkUser(username, password))
         {
-            RequestDispatcher rs = request.getRequestDispatcher("Welcome");
+            RequestDispatcher rs = request.getRequestDispatcher("Welcome to Autotraders");
             rs.forward(request, response);
         }
         else
